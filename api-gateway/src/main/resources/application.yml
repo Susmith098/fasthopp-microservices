@@ -1,0 +1,47 @@
+server:
+  port: 9292
+
+eureka:
+  instance:
+    client:
+      severUrl:
+        defaultZone: http://localhost:8761/eureka/
+spring:
+  application:
+    name: "API-GATEWAY"
+
+  cloud:
+    config:
+      enabled: true
+
+    gateway:
+
+      routes:
+        - id: USER-SERVICE
+          uri: lb://USER-SERVICE
+          predicates:
+            - Path=/api/**
+        - id: TASK-SERVICE
+          uri: lb://TASK-SERVICE
+          predicates:
+            - Path=/task/**
+          filters:
+            - AuthenticationFilter
+        - id: NOTIFICATION-SERVICE
+          uri: lb://NOTIFICATION-SERVICE
+          predicates:
+            - Path=/notification/**
+          filters:
+            - AuthenticationFilter
+
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedMethods: "*"
+            allowedHeaders: "*"
+
+management:
+  tracing:
+    sampling:
+      probability: '1.0'
