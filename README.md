@@ -1,4 +1,4 @@
-# **Fasthopp Frontend**
+# **Fasthopp Backend**
 
 ## _Fasthopp is a Jira-like application where users can make Kanban boards and create cards (or issues) on them._
 ---
@@ -11,7 +11,7 @@ Features of Fasthopp backend:
 - Kafka broker for notification
 - REST API
 ---
-Setup for this `Speing Boot` code:
+Setup for this `Spring Boot` code:
 ---
 - Fork this repo
 - Clone this repo
