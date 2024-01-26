@@ -7,9 +7,14 @@ Features of Fasthopp backend:
   - API gateway
   - Eureka Server (Discovery Server)
   - Config Server
-  - Main 3 microservice (User-service, Task-service and Notification-service)
+  - Main 3 microservice (User-service, Task-service and Notification-service.)
+  - (Meet-servcie will be made separate and add more features soon.)
 - Kafka broker for notification
 - REST API
+---
+Architectur Diagram of Fasthopp:
+---
+![Architecture](https://drive.google.com/drive/folders/1f3SypY43Unjx2xLX_d3E_WBnPn_4aXw2)
 ---
 Setup for this `Spring Boot` code:
 ---
