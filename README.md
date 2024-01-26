@@ -14,7 +14,7 @@ Features of Fasthopp backend:
 ---
 Architectur Diagram of Fasthopp:
 ---
-![Architecture](https://drive.google.com/drive/folders/1f3SypY43Unjx2xLX_d3E_WBnPn_4aXw2)
+![Architecture](https://github.com/Susmith098/fasthopp-images/blob/main/Fasthopp-architecture.png)
 ---
 Setup for this `Spring Boot` code:
 ---
